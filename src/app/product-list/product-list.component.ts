@@ -1,0 +1,51 @@
+import { Component, OnInit } from '@angular/core';
+import { Product } from './product';
+
+@Component({
+  selector: 'app-product-list',
+  templateUrl: './product-list.component.html',
+  styleUrls: ['./product-list.component.css']
+})
+export class ProductListComponent implements OnInit {
+
+  products: Product[] =[ 
+    {
+    image: 'assets/img/1.jpg',
+    name: 'Pink Car Soap',
+    type: 'Shampoo',
+    price: 1050,
+    stock: 10,
+    offer:true
+    },
+    {
+    image: 'assets/img/2.jpg',
+    name: 'Orange Degreaser',
+    type: 'Desengrasante',
+    price: 980,
+    stock: 15,
+    offer:false
+    },
+    {
+    image: 'assets/img/4.jpg',
+    name: 'Non Silicone',
+    type: 'Renovador',
+    price: 1200,
+    stock: 12,
+    offer:false
+    },
+    {
+      image: 'assets/img/pinkSoap.jpg',
+      name: 'Yellow Degreaser',
+      type: 'Desengrasante',
+      price: 980,
+      stock: 0,
+      offer:false
+    }
+  ]
+
+  constructor() { }
+
+  ngOnInit() {
+  }
+
+}

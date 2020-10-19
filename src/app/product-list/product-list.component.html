@@ -1,0 +1,20 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Nombre</th>
+      <th scope="col">Tipo</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products" [ngClass]="{offerStyle: product.offer}">
+      <th scope="row">{{product.image}}</th>
+      <td>{{product.name}}</td>
+      <td>{{product.type}}</td>
+      <td>{{product.price}}</td>
+      <td><span *ngIf="product.stock==0">Sin Stock</span>{{product.stock}}</td>
+    </tr>
+  </tbody>
+</table>
