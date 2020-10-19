@@ -4,5 +4,6 @@ export interface Product {
     type: String,
     price: number,
     stock: number,
-    offer: boolean
+    offer: boolean,
+    quantity: number;
 }

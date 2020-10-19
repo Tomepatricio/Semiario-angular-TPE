@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from './product';
+import { Product } from './Product';
 
 @Component({
   selector: 'app-product-list',
@@ -15,7 +15,8 @@ export class ProductListComponent implements OnInit {
     type: 'Shampoo',
     price: 1050,
     stock: 10,
-    offer:true
+    offer:true,
+    quantity:0
     },
     {
     image: 'assets/img/2.jpg',
@@ -23,7 +24,8 @@ export class ProductListComponent implements OnInit {
     type: 'Desengrasante',
     price: 980,
     stock: 15,
-    offer:false
+    offer:false,
+    quantity:0
     },
     {
     image: 'assets/img/4.jpg',
@@ -31,7 +33,8 @@ export class ProductListComponent implements OnInit {
     type: 'Renovador',
     price: 1200,
     stock: 12,
-    offer:false
+    offer:false,
+    quantity:0
     },
     {
       image: 'assets/img/pinkSoap.jpg',
@@ -39,13 +42,30 @@ export class ProductListComponent implements OnInit {
       type: 'Desengrasante',
       price: 980,
       stock: 0,
-      offer:false
+      offer:false,
+      quantity:0
     }
   ]
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  increaseQuantity(product:Product){
+    if (product.stock>product.quantity) {
+      product.quantity++;
+    }
+  }
+
+  decreaseQuantity(product:Product){
+    if (product.quantity>0) {
+      product.quantity--;
+    }
+  }
+
+  changeQuantity(event, product:Product){
+    console.log(event)
   }
 
 }
