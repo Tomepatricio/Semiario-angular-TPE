@@ -1,0 +1,4 @@
+<!--No me toma el $event como evento, [()]TWO-WAY-Binding ()para detectar el evento-->
+<button class="btn text-white btn-sm" (click)="decreaseQuantity(product)">-</button>
+    <input class="text-center" type="text" [(ngModel)]="product.quantity" (keyUp)="changeQuantity($event, product)">
+<button class="btn text-white btn-sm" (click)="increaseQuantity(product)">+</button>

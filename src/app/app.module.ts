@@ -6,9 +6,10 @@ import { AppComponent } from "./app.component";
 import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAboutComponent } from './product-about/product-about.component';
 import { AppRoutingModule } from "./app-routing.modules";
+import { InputNumerComponent } from './input-numer/input-numer.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, ProductAboutComponent],
+  declarations: [AppComponent, ProductListComponent, ProductAboutComponent, InputNumerComponent],
   imports: [BrowserModule,AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
