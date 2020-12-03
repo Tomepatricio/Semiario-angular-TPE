@@ -8,9 +8,10 @@ import { ProductAboutComponent } from './product-about/product-about.component';
 import { AppRoutingModule } from "./app-routing.modules";
 import { InputNumerComponent } from './input-numer/input-numer.component';
 import { BuyCartComponent } from './buy-cart/buy-cart.component';
+import { ShowProductsComponent } from './show-products/show-products.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, ProductAboutComponent, InputNumerComponent, BuyCartComponent],
+  declarations: [AppComponent, ProductListComponent, ProductAboutComponent, InputNumerComponent, BuyCartComponent, ShowProductsComponent],
   imports: [BrowserModule,AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
