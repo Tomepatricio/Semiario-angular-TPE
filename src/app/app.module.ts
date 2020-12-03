@@ -7,9 +7,10 @@ import { ProductListComponent } from "./product-list/product-list.component";
 import { ProductAboutComponent } from './product-about/product-about.component';
 import { AppRoutingModule } from "./app-routing.modules";
 import { InputNumerComponent } from './input-numer/input-numer.component';
+import { BuyCartComponent } from './buy-cart/buy-cart.component';
 
 @NgModule({
-  declarations: [AppComponent, ProductListComponent, ProductAboutComponent, InputNumerComponent],
+  declarations: [AppComponent, ProductListComponent, ProductAboutComponent, InputNumerComponent, BuyCartComponent],
   imports: [BrowserModule,AppRoutingModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
