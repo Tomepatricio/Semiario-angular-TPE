@@ -1,15 +1,7 @@
 .offerStyle {
-    background-color: darkcyan;
+  background-color: darkcyan;
 }
 
 td {
-    vertical-align: center;
-}
-
-input {
-    max-width:20px;
-}
-
-button {
-    max-width:10px;
+  vertical-align: center;
 }
